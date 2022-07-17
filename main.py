@@ -15,7 +15,7 @@ def knapsack(W, w, v, n):
     if (w[n - 1] > W):
         return knapsack(W, w, v, n - 1)
 
-    # Check if we already have an answer to the sunproblem
+    # Check if we already have an answer to the subproblem
     if (W, n) in memo:
         return memo[(W, n)]
 
@@ -33,3 +33,13 @@ def knapsack(W, w, v, n):
     memo[(W, n)] = value_max
 
     return value_max
+
+
+if __name__ == "__main__":
+    w = [3, 1, 5, 10, 1, 2, 24, 1]
+    v = [10, 5, 7.5, 33, 5, 6, 80, 7.5]
+    limit = 30
+    n = len(w)
+
+    print(knapsack(limit, w, v, n))
+    print(memo)
