@@ -2,7 +2,9 @@
 memo = {}
 
 """
-solving knapsack problem with recursion
+solving knapsack problem with recursion.
+    n is the total number of items 
+    W is the maximum weight the knapsack can carry
 """
 def knapsack(W, w, v, n):
     if n == 0 or W == 0:
