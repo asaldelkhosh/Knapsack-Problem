@@ -1,8 +1,4 @@
-<h1 align="center">
-  Knapsack Problem
-</h1>
-
-<br />
+# Knapsack Problem
 
 Sovling knapsack problem with an optimal solution.
 The solution to the Knapsack problem uses Recursion with memoization to find the optimal solution.
